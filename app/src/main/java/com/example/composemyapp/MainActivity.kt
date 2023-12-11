@@ -25,6 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composemyapp.ui.theme.ComposeMyAppTheme
+import com.example.composemyapp.ui.theme.ComposeMyAppThemeLight
 
 /**
  * 튜토리얼 링크: https://developer.android.com/jetpack/compose/tutorial?hl=ko
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            ComposeMyAppTheme {
+            ComposeMyAppThemeLight {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     MessageCard(Message("Android", "Jetpack Compose"))
                 }
